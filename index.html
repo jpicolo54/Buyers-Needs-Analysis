@@ -63,7 +63,20 @@
   <form action="https://formsubmit.co/joelpicolo54@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
 
-    <h2>Buyer Lifestyle & Preferences</h2>
+    <h2>Basic Information</h2>
+    <div class="question"><label>Name:</label><input type="text" name="Name" /></div>
+    <div class="question"><label>Client 1:</label><input type="text" name="Client 1" /></div>
+    <div class="question"><label>Client 2:</label><input type="text" name="Client 2" /></div>
+    <div class="question"><label>Phone Number:</label><input type="text" name="Phone Number" /></div>
+    <div class="question"><label>Email:</label><input type="email" name="Email" /></div>
+    <div class="question"><label>Birthday:</label><input type="date" name="Birthday" /></div>
+    <div class="question"><label>Primary contact & best way/time to reach:</label><textarea name="Primary Contact"></textarea></div>
+    <div class="question"><label>What is prompting your move?</label><textarea name="Reason for Move"></textarea></div>
+    <div class="question"><label>When do you need to be in your new home?</label><textarea name="Move-in Date"></textarea></div>
+    <div class="question"><label>Where do you want your monthly note to be?</label><textarea name="Monthly Note Target"></textarea></div>
+    <div class="question"><label>Are you ready to make an offer if we find the right home?</label><textarea name="Ready to Offer?"></textarea></div>
+
+    <h2>Lifestyle & Household</h2>
     <div class="question"><label>Who will be living in the home?</label><textarea name="Household Residents"></textarea></div>
     <div class="question"><label>Will anyone be spending the occasional overnight stay?</label>
       <div class="checkbox-group">
@@ -75,12 +88,17 @@
     <div class="question"><label>Do you work from home?</label><textarea name="Work From Home"></textarea></div>
     <div class="question"><label>Do you have pets? (Include weight and breed)</label><textarea name="Pets"></textarea></div>
     <div class="question"><label>Do you have any special needs (large equipment, fine art, or large furniture)?</label><textarea name="Special Needs"></textarea></div>
+    <div class="question"><label>What should your home say about you?</label><textarea name="Home Message"></textarea></div>
+
+    <h2>Location Preferences</h2>
     <div class="question"><label>Tell me about your ideal locations (Zipcodes):</label><textarea name="Ideal Locations"></textarea></div>
     <div class="question"><label>What is your max commute time?</label><textarea name="Max Commute Time"></textarea></div>
     <div class="question"><label>What is your work address?</label><textarea name="Work Address"></textarea></div>
-    <div class="question"><label>What is also important about your ideal location?</label><textarea name="Other Location Needs"></textarea></div>
+    <div class="question"><label>Are schools important?</label><textarea name="Schools Importance"></textarea></div>
+    <div class="question"><label>Preferred view (skyline, lake, etc.):</label><textarea name="View Preference"></textarea></div>
+    <div class="question"><label>What else is important about your ideal location?</label><textarea name="Other Location Needs"></textarea></div>
 
-    <h2>Home Preferences</h2>
+    <h2>Home Structure & Style</h2>
     <div class="question"><label>Do you have a preference of when the house is built?</label><textarea name="House Age"></textarea></div>
     <div class="question"><label>Do you want a house in move-in condition?</label><textarea name="Move-in Condition"></textarea></div>
     <div class="question"><label>Are you willing to do some work?</label>
@@ -89,11 +107,15 @@
         <option value="Take out walls and remodel bathrooms and kitchen">Take out walls and remodel bathrooms and kitchen</option>
       </select>
     </div>
-    <div class="question"><label>Do you want a 1 story or 2 story house?</label><textarea name="Stories"></textarea></div>
-    <div class="question"><label>If it's 2 story, does the primary bedroom need to be on the bottom floor?</label><textarea name="Primary Bedroom Location"></textarea></div>
+    <div class="question"><label>Type of home (single-family, condo, etc.):</label><textarea name="Home Type"></textarea></div>
+    <div class="question"><label>Architectural style:</label><textarea name="Architectural Style"></textarea></div>
+    <div class="question"><label>Square footage:</label><input type="text" name="Square Footage" /></div>
+    <div class="question"><label>1 story or 2 story house?</label><textarea name="Stories"></textarea></div>
+    <div class="question"><label>If 2 story, does the primary bedroom need to be downstairs?</label><textarea name="Primary Bedroom Location"></textarea></div>
+    <div class="question"><label>Lot size:</label><input type="text" name="Lot Size" /></div>
     <div class="question"><label>Do you love a particular siding?</label><textarea name="Siding"></textarea></div>
     <div class="question"><label>Do you need a porch or a deck?</label><textarea name="Porch or Deck"></textarea></div>
-    <div class="question"><label>What are your needs in terms of parking?</label>
+    <div class="question"><label>Parking requirements:</label>
       <div class="checkbox-group">
         <label><input type="checkbox" name="Parking" value="1 to 2" /> 1 to 2</label>
         <label><input type="checkbox" name="Parking" value="3+" /> 3+</label>
@@ -101,12 +123,16 @@
         <label><input type="checkbox" name="Parking" value="Carport" /> Carport</label>
       </div>
     </div>
-    <div class="question"><label>Do you need a pool?</label>
+    <div class="question"><label>Need a pool?</label>
       <div class="radio-group">
         <label><input type="radio" name="Pool" value="Yes" /> Yes</label>
         <label><input type="radio" name="Pool" value="No" /> No</label>
       </div>
     </div>
+    <div class="question"><label>Other exterior features:</label><textarea name="Exterior Features"></textarea></div>
+
+    <h2>Interior Preferences</h2>
+    <div class="question"><label>Interior style (formal, cozy, traditional, etc.):</label><textarea name="Interior Style"></textarea></div>
     <div class="question"><label>What kind of floor plan do you want?</label>
       <select name="Floor Plan">
         <option value="Open">Open</option>
@@ -115,6 +141,21 @@
         <option value="Split-level">Split-level</option>
       </select>
     </div>
+    <div class="question"><label>Likes/dislikes for the interior:</label><textarea name="Interior Likes"></textarea></div>
+    <div class="question"><label>Bedrooms (how many and how used?):</label><textarea name="Bedrooms"></textarea></div>
+    <div class="question"><label>Master bedroom preferences:</label><textarea name="Master Bedroom"></textarea></div>
+    <div class="question"><label>Bathrooms (how many and features?):</label><textarea name="Bathrooms"></textarea></div>
+    <div class="question"><label>Kitchen features and finishes:</label><textarea name="Kitchen"></textarea></div>
+    <div class="question"><label>Dining room preferences:</label><textarea name="Dining Room"></textarea></div>
+    <div class="question"><label>Living/family room likes/dislikes:</label><textarea name="Living Room"></textarea></div>
+    <div class="question"><label>Fireplace preference:</label><textarea name="Fireplace"></textarea></div>
+    <div class="question"><label>Other rooms you need or want:</label><textarea name="Other Rooms"></textarea></div>
+
+    <h2>Top Priorities</h2>
+    <div class="question"><label>Top five must-haves:</label><textarea name="Top 5 Must-Haves"></textarea></div>
+    <div class="question"><label>Something you really want:</label><textarea name="Bonus Feature 1"></textarea></div>
+    <div class="question"><label>Something that would make it perfect:</label><textarea name="Bonus Feature 2"></textarea></div>
+    <div class="question"><label>One last dream feature:</label><textarea name="Bonus Feature 3"></textarea></div>
 
     <div style="margin-top: 2em; text-align: center;">
       <button type="submit">Submit</button>
